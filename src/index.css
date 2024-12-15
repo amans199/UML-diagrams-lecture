@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 bg-gray-50;
+  }
+}
+
+@layer components {
+  .diagram-card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .interactive-element {
+    @apply cursor-pointer transition-transform duration-200 hover:scale-105;
+  }
+
+  .react-flow__node {
+    @apply shadow-md;
+  }
+
+  .react-flow__edge-path {
+    @apply stroke-2;
+  }
+
+  .react-flow__controls {
+    @apply shadow-lg;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-600;
+  }
+}
